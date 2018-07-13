@@ -1,0 +1,147 @@
+
+          window.data = {
+            Product: [],
+            Context: {"randomOfferDays":88,"dayOfWeek":"lunes","dayOfWeekPlural":"lunes","weather":{"main":300,"description":"llovizna ligera","temp":{"value":19.32,"max":20,"unit":"C"},"pressure":1014,"humidity":88,"id":3433955}},
+            Rules: undefined
+          };
+          window.binds = {
+            Feed: {"prod1_click":[{"link":"Product.0.hr_product_link","options":{},"source":"Product","id":"e31f8f12-e39f-46cd-9270-6b6c53ff35bc"}],"prod1_imagen_fondo":[{"image":"Product.0.hr_image_url_vertical","options":{"imageQuality":"2000x2000q85"},"source":"Product","id":"de1ae64a-8eff-4299-a1e4-344e636792f9"}],"prod1_texto1":[{"text":"Product.0.hr_title","options":{},"source":"Product","id":"adc5a037-3778-4eed-b133-00accdf82a85"}],"prod1_pack":[{"image":"Product.0.hr_image_pack","options":{},"source":"Product","id":"6892ff4a-4bdf-4151-8f8a-8f697397eefb"}],"prod1_texto3":[{"text":"Product.0.hr_cta","options":{},"source":"Product","id":"23dceb15-2cec-4d65-bb66-e5b42030907d"}],"prod1_texto":[{"text":"Product.0.hr_title","options":{},"source":"Product","id":"7c6f3248-39e7-4d5f-bbd2-c8333b1607ec"}],"prod1_texto2":[{"text":"Product.0.hr_title2","options":{},"source":"Product","id":"a0e43b6b-9635-4ba1-b4ee-57024e895af0"}]},
+            Template: undefined
+          };
+          window.forceRedirectUrl = undefined;
+          window.hrTrackers = {"impression":[{"url":"https://trck.herolens.com/t/8dd27c0234538f8b0e388735443e510a/impr?adId=159879&ignore=false&cacheBuster=${CACHEBUSTER}&adContextParams=&adFunnelStep=6fcd67bc-1768-442e-9cdf-b865e2da2037&adShownId=159879&adSize=120x600&adType=retargeting&animationId=fed6470a9304e2eeaffd56a830c8f28e&animationTrackingName=v9835&dataCategories=&dataItems=5&dspInsertionOrderId=%24%7BINSERTION_ORDER_ID%7D&funnel=default_tracked&hrf=%24%7BSOURCE_URL_ENC%7D&imprId=6647b3aaf264276d7178d201dd8ad97d&meta_algorithm=prospecting%7Cprospecting&meta_context_group_frequency1=593&meta_context_group_frequency1_date=2018-04-25T23%3A42%3A22.983Z&meta_context_group_frequency2=4&meta_context_group_frequency2_date=2018-04-04T22%3A08%3A32.031Z&meta_context_group_frequency3=16&meta_context_group_frequency3_date=2018-03-24T03%3A26%3A54.521Z&meta_funnel_step=default&recency=0&trackContext=default_tracked","type":"img"}],"click":[]};
+          window.hrClickThroughTrackers = [{"tracker_type":"clickthrough","value":"${CLICK_URL_ENC}"},{"tracker_type":"clickthrough","value":"https://trck.herolens.com/t/8dd27c0234538f8b0e388735443e510a/clck?adId=159879&ignore=false&adContextParams=&adFunnelStep=6fcd67bc-1768-442e-9cdf-b865e2da2037&adShownId=159879&adSize=120x600&adType=retargeting&animationId=fed6470a9304e2eeaffd56a830c8f28e&animationTrackingName=v9835&dataCategories=&dataItems=5&dspInsertionOrderId=%24%7BINSERTION_ORDER_ID%7D&funnel=default_tracked&hrf=%24%7BSOURCE_URL_ENC%7D&imprId=6647b3aaf264276d7178d201dd8ad97d&meta_algorithm=prospecting%7Cprospecting&meta_context_group_frequency1=593&meta_context_group_frequency1_date=2018-04-25T23%3A42%3A22.983Z&meta_context_group_frequency2=4&meta_context_group_frequency2_date=2018-04-04T22%3A08%3A32.031Z&meta_context_group_frequency3=16&meta_context_group_frequency3_date=2018-03-24T03%3A26%3A54.521Z&meta_funnel_step=default&recency=0&trackContext=default_tracked&url="}];
+          window.hrQueryString = "";
+          window.hrVars = {"randomOfferDays":88,"dayOfWeek":"lunes","dayOfWeekPlural":"lunes","weather":{"main":300,"description":"llovizna ligera","temp":{"value":19.32,"max":20,"unit":"C"},"pressure":1014,"humidity":88,"id":3433955}};
+          window.hrObject = {"adId":"159879","adName":"Campaña Inicial Pack - 120x600 - doubleclick_dbm - prospecting","adSize":"120x600","animationName":"campaña_inicial_gwd_final-1543ad083730a670","animationId":"fed6470a9304e2eeaffd56a830c8f28e"};
+          var preScriptsLoaded = 0;
+          var onPreScriptsLoaded = function() {
+            var event = document.createEvent("Event");
+            event.initEvent("heroadImpression",!0,!0);
+            window.dispatchEvent(event);
+            preScriptsLoaded++;
+            if (preScriptsLoaded < 1) {
+              return;
+            }
+            var cloneNode = function(node, parent) {
+              if (node.tagName) {
+                var tagName = node.tagName.toLowerCase();
+                var is = node.getAttribute('is');
+                if (node instanceof SVGElement) {
+                  var clone = document.createElementNS("http://www.w3.org/2000/svg", tagName);
+                } else {
+                  var clone = document.createElement(tagName, is);
+                }
+                var attrs = node.attributes;
+                for (var i = 0; i < attrs.length; i++) {
+                  var attr = attrs[i];
+                  clone.setAttribute(attr.name, attr.nodeValue);
+                }
+                clone = clone.cloneNode(true);
+              } else if (node.nodeType === 3) {
+                var clone = document.createTextNode(node.textContent);
+              }
+              for (var i = 0; i < node.childNodes.length; i++) {
+                var child = node.childNodes[i];
+                cloneNode(child, clone);
+              }
+              parent.appendChild(clone);
+            }
+            var div = document.querySelector('[id^=hr-ad-container]');
+            if (!div) {
+              div = document.createElement('div');
+              document.body = document.body || document.createElement('body');
+              document.body.appendChild(div);
+            }
+
+            div.style.position = 'fixed';
+
+            var injectTextHelper = function(newDom) {
+              var textHelper = document.createElement('gwd-text-helper');
+              textHelper.id = 'gwd-text-helper_1';
+              textHelper.setAttribute('fit-font-size-for-selector', '#prod1_texto1,[data-gwd-grp-id=prod1_texto1],#prod1_texto3,[data-gwd-grp-id=prod1_texto3],#prod1_texto,[data-gwd-grp-id=prod1_texto],#prod1_texto2,[data-gwd-grp-id=prod1_texto2]');
+              textHelper.setAttribute('gwd-fitting-truncate', 'false');
+              textHelper.setAttribute('gwd-min-font-size-px', '6');
+              newDom.documentElement.querySelector('#gwd-ad').appendChild(textHelper);
+            }
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  var newDom = new DOMParser().parseFromString(xhttp.responseText, 'text/html');
+                  injectTextHelper(newDom);
+                  var addAfterBodyCondition = function(c) {
+                    return c.getAttribute('gwd-events') === 'support' ||
+                      c.getAttribute('gwd-events') === 'handlers' ||
+                      c.getAttribute('gwd-events') === 'registration';
+                  };
+                  var createDom = function() {
+                    var addAfterBody = [];
+                    for (var i = 0; i < newDom.head.children.length; i++) {
+                      var headChild = newDom.head.children[i];
+                      if (addAfterBodyCondition(headChild)) {
+                        addAfterBody.push(headChild);
+                      } else {
+                        cloneNode(headChild, div);
+                      }
+                    }
+                    for (var i = 0; i < newDom.body.children.length; i++) {
+                      var bodyChild = newDom.body.children[i];
+                      if (addAfterBodyCondition(bodyChild)) {
+                        addAfterBody.push(bodyChild);
+                      } else {
+                        cloneNode(bodyChild, div);
+                      }
+                    }
+                    for (var i = 0; i < addAfterBody.length; i++) {
+                      var child = addAfterBody[i];
+                      cloneNode(child, div);
+                    }
+
+                    document.addEventListener('pageactivated', function() {
+                      window.HeroDataBinder.bindData();
+                    });
+                  };
+                  if (window.hrItemsReady) {
+                    createDom();
+                  } else {
+                    document.addEventListener('hrItemsReady', createDom);
+                  }
+                }
+            };
+            xhttp.open("GET", "https://static.herolens.com/tmp/prod/eadaedc89964eda03c44725c26713bbd/5de831d4fc468c98ced306d3e7642760b4a888a8.html?static=true&buster=15245278307091", true);
+            xhttp.send();
+          }
+          document.addEventListener('hrItemsReady', function() {
+            window.hrItemsReady = true;
+          });
+          if (true) {
+            if (false) {
+              var event = document.createEvent('HTMLEvents');
+              event.initEvent('hrItemsReady', true, true);
+              document.dispatchEvent(event);
+            } else {
+              window.onItemLoaded = function(item) {
+                window.data.Product.push(item[0]);
+                if (window.data.Product.length === 1) {
+                  var event = document.createEvent('HTMLEvents');
+                  event.initEvent('hrItemsReady', true, true);
+                  document.dispatchEvent(event);
+                }
+              }
+            }
+          }
+          var loadScripts = function(scriptArr, callback) {
+            for (var i = 0; i < scriptArr.length; i++) {
+              var script = scriptArr[i];
+              var scriptElem = document.createElement('script');
+              scriptElem.src = script;
+              if (callback) {
+                scriptElem.onload = callback;
+              }
+              document.head.appendChild(scriptElem);
+            }
+          }
+          loadScripts(["https://static.herolens.com/dcapps/2018-04-17-gwd_default-undefined-b4c8d31f-5143-4194-ba24-af78359cee9b/app_gzip.js"], onPreScriptsLoaded);
+          loadScripts(["https://api.herolens.com/data/feed-loreal-pack-4eb358dc-6a50-4bc1-949b-4f48e86f3bcf_feed/5/version_20170816_1525054415287.js?callbackName=window.onItemLoaded&isJSONP=true"]);
+        
